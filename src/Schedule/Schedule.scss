@@ -1,0 +1,475 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+  font-family: "Noto Sans TC";
+}
+:root {
+  --black: #3f414b;
+  --main: #6296fe;
+  --divide: #e0e4ec;
+  --green: #30c68d;
+  --red: #f86262;
+}
+
+.BG {
+
+  margin-left: 10px;
+  box-sizing: border-box;
+  width: 1034px;
+  height: 766px;
+  border-radius: 28px 0 0 0;
+  background-color: #f3f3f9;
+  padding: 26px 20px 34px 20px;
+  position: relative;
+
+    .projectTittle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    width: 100%;
+    .projectSchedule {
+      font-size: 28px;
+      margin-left: 4px;
+      font-weight: 500;
+      color: var(--black);
+    }
+
+    .importProject {
+      width: 160px;
+      height: 40px;
+      padding: 8px 17px;
+      background: linear-gradient(#f3f3f9, #f3f3f9) padding-box,
+        linear-gradient(to right, #978af6 0%, var(--main) 98%) border-box;
+      border: 2px solid transparent;
+      border-radius: 22px;
+      color: var(--main);
+      margin-right: 16px;
+    }
+    .addProject {
+      float: right;
+      width: 160px;
+      height: 40px;
+      padding: 8px 17px;
+      background: linear-gradient(to right, #978af6 0%, var(--main) 98%)
+          padding-box,
+        linear-gradient(to right, #978af6 0%, var(--main) 98%) border-box;
+      border: 2px solid transparent;
+      border-radius: 22px;
+      color: #ffffff;
+    }
+  }
+  .ScheduleTittle {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    padding: 8px 68px 8px 20px;
+    border-radius: 8px 8px 0 0;
+    background-color: #ffffff;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: rgba(63, 65, 75, 0.65);
+    font-size: 16px;
+    font-weight: 500;
+    .TittleName {
+      width: 130px;
+      height: 24px;
+      margin-right: 55px;
+      //background-color: #6296fe;
+    }
+    .TittlePerson {
+      width: 100px;
+      height: 24px;
+      margin-right: 30px;
+    }
+    .TittleDate {
+      width: 100px;
+      height: 24px;
+      margin-right: 30px;
+    }
+    .TittleTime {
+      width: 130px;
+      height: 24px;
+    }
+    .TittleProcess {
+      width: 80px;
+      height: 24px;
+      margin-right: 16px;
+    }
+    .TittleLastTime {
+      width: 130px;
+      height: 24px;
+      margin-right: 73px;
+    }
+    .TittleOperate {
+      width: 32px;
+      height: 24px;
+    }
+  }
+  .ScheduleRow {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 48px;
+    margin: 4px 0;
+    padding: 12px 29px 12px 20px;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--black);
+    .bar {
+      width: 2px;
+      height: 20px;
+      margin: 2px 8px;
+      background-color: rgba(138, 152, 180, 0.3);
+    }
+    .rowName {
+      width: 146px;
+      height: 24px;
+      margin-right: 39px;
+
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .rowPerson {
+      width: 48px;
+      height: 24px;
+      margin-right: 86px;
+    }
+    .rowDate {
+      width: 60px;
+      height: 24px;
+      margin-right: 66px;
+    }
+    .rowTime {
+      width: 84px;
+      height: 24px;
+      margin-right: 51px;
+    }
+    .rowProcess {
+      width: 28px;
+      height: 24px;
+      margin-right: 63px;
+    }
+    .rowLastTime {
+      width: 84px;
+      height: 24px;
+      margin-right: 82px;
+    }
+    .rowOperate {
+      display: flex;
+      flex-direction: row;
+      .operateImage {
+        width: 24px;
+        height: 24px;
+        background-size: cover;
+      }
+    }
+    .rowStatus {
+      display: flex;
+      flex-direction: row;
+      width: 84px;
+      height: 24px;
+      margin: 8px 24px 8px 16px;
+      padding: 2px 11px;
+
+      border-radius: 13px;
+      background-color: #30c68c89;
+      .statusIcon {
+        width: 16px;
+        height: 16px;
+        background-size: cover;
+      }
+    }
+  }
+  
+  
+}
+
+.BGB {
+  box-sizing: border-box;
+  padding: 15px 20px 34px 16px;
+  margin-left: 10px;
+  width: 1034px;
+  height: 766px;
+  border-radius: 28px 0 0 0;
+  background-color: #f3f3f9;
+
+  position: relative;
+  .projectTittle {
+    display: flex;
+    margin-left: 11px;
+    margin-bottom: 8px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: center;
+    .projectSchedule {
+      color: var(--black);
+    }
+    .projectWeek {
+      margin-left: 40px;
+      color: var(--main);
+    }
+
+    .importProject {
+      width: 160px;
+      height: 40px;
+      padding: 8px 17px;
+      background: linear-gradient(#f3f3f9, #f3f3f9) padding-box,
+        linear-gradient(to right, #978af6 0%, var(--main) 98%) border-box;
+      border: 2px solid transparent;
+      border-radius: 22px;
+      color: var(--main);
+      margin-right: 16px;
+    }
+
+    .addProject {
+      float: right;
+      width: 160px;
+      height: 40px;
+      padding: 8px 17px;
+      background: linear-gradient(#f3f3f9, #f3f3f9) padding-box,
+        linear-gradient(to right, #978af6 0%, var(--main) 98%) border-box;
+      border: 2px solid transparent;
+      border-radius: 22px;
+      color: #ffffff;
+    }
+  }
+  .tittleBar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--divide);
+    margin-bottom: 8px;
+
+    box-sizing: border-box;
+    .blueBar {
+      margin-left: 140px;
+      width: 122px;
+      height: 3px;
+      background-color: var(--main);
+    }
+  }
+  .projectName {
+    width: 257px;
+    height: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    color: var(--black);
+    margin-bottom: 8px;
+    margin-left: 4px;
+  }
+  .projectInfo {
+    opacity: 0.7;
+    color: var(--black);
+    margin-left: 6px;
+    margin-bottom: 15px;
+  }
+  .exportReport {
+    width: 128px;
+    height: 36px;
+    padding: 6px 12px;
+    border-radius: 19px;
+    background: linear-gradient(to right, #978af6 0%, var(--main) 98%)
+        padding-box,
+      linear-gradient(#f3f3f9, #f3f3f9) border-box;
+    border: 2px solid transparent;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+  }
+  .goBack {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+    .backIcon {
+      background-size: cover;
+      margin-right: 4px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .ScheduleTittle {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    padding: 13px 20px 13px 10px;
+    border-radius: 8px 8px 0 0;
+    background-color: #ffffff;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: rgba(63, 65, 75, 0.65);
+    font-size: 16px;
+    font-weight: 500;
+    .TittleName {
+      width: 64px;
+      height: 24px;
+      margin-right: 213px;
+    }
+    .TittleStatus {
+      width: 32px;
+      height: 24px;
+      margin-right: 84px;
+    }
+    .TittlePerson {
+      width: 48px;
+      height: 24px;
+      margin-right: 28px;
+    }
+    .TittleEStartTime {
+      width: 96px;
+      height: 24px;
+      margin-right: 22px;
+    }
+    .TittleProcess {
+      width: 64px;
+      height: 24px;
+      margin-right: 32px;
+    }
+    .TittleStartTime {
+      width: 64px;
+      height: 24px;
+      margin-right: 52px;
+    }
+    .TittleCumulative {
+      width: 64px;
+      height: 24px;
+      margin-right: 33px;
+    }
+    .TittleTimeS {
+      width: 64px;
+      height: 24px;
+    }
+  }
+  .ScheduleRow {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    margin: 4px 0;
+    padding: 12px 29px 12px 10px;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--black);
+
+    .rowName {
+      width: 216px;
+      height: 24px;
+      margin-right: 59px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .rowStatus {
+      width: 84px;
+      height: 24px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2px 9px 2px 9px;
+      box-sizing: border-box;
+      border-radius: 13px;
+      //background-color: rgba(138, 152, 180);
+      background-color: rgba(48, 198, 141, 0.15);
+      white-space: nowrap;
+      .statusIcon {
+        width: 16px;
+        height: 16px;
+        background-size: cover;
+      }
+      p {
+        color: var(--green);
+      }
+    }
+    .rowPerson {
+      width: 48px;
+      height: 24px;
+      margin-left: 34px;
+      margin-right: 28px;
+    }
+    .rowEStartTime {
+      width: 84px;
+      height: 24px;
+      margin-right: 39px;
+    }
+    .rowProcess {
+      width: 47px;
+      height: 24px;
+      margin-right: 44px;
+    }
+    .rowStartTime {
+      width: 84px;
+      height: 24px;
+      margin-right: 36px;
+    }
+    .rowCumulative {
+      width: 47px;
+      height: 24px;
+      margin-right: 50px;
+    }
+    .rowTimeS {
+      width: 32px;
+      height: 24px;
+    }
+  }
+}
+
+.pagination {
+  position: absolute;
+  right: 12px;
+  bottom: 34px;
+  .Circle {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 999em;
+    margin-right: 8px;
+    background-color: #ffffff;
+  }
+  .Circle:hover {
+    background-color: #6296fe;
+  }
+  .backgroundImage {
+    border: none;
+    margin-right: 8px;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+  }
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
